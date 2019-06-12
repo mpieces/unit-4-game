@@ -19,7 +19,6 @@ function startGame() {
 // change HTML to reflect round conditions
 $("#number-to-guess").text(targetNumber);
 $("#counter-number").text(counter);
-
 }
 
 // Create 4 crystals each with their own number value:
@@ -73,5 +72,4 @@ $(".crystal-image").on("click", function () {
         $('#losses').text(losses);
         startGame();
     }
-
 });
