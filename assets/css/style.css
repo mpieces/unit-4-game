@@ -1,0 +1,15 @@
+.crystal-image {
+    max-width: 300px;
+}
+
+.list-group {
+    float: left;
+    border: 8px solid #d74b71;
+}
+.head {
+    background-image: url('../images/crystal-bg.jpeg');
+}
+.header {
+    font-family: 'Architects Daughter', cursive;
+    color: #fff;
+}
