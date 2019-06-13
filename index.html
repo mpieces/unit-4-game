@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <div class="container-fluid">
-            <div class="jumbotron head">
-                <h1 class="display-4 text-center header">Crystal Collector</h1>
-                <p class="lead text-center header"><em>Click on the crystals until you get to the target number!</em></p>
-            </div>
-  
-    <ul class="list-group">
-            <li class="list-group-item">Target Number: <span id="number-to-guess"> </span></li>
-            <li class="list-group-item">Counter: <span id="counter-number"> </span</li>
-            <li class="list-group-item">Wins: <span id="wins"> </span></li>
-            <li class="list-group-item">Losses: <span id="losses"></span></li>
-          </ul>
-    <div id="crystals" class="text-center"></div>
-
-    
-
-
-
-
-
-
-
-
+        <div class="jumbotron head">
+            <h1 class="display-4 text-center header">Crystal Collector</h1>
+            <h2 class="lead text-center header"><em>Click on the crystals until you get to the target number....but
+                    don't go over!</em></h2>
+        </div>
+        <div class="stats">
+            <ul class="list-group">
+                <li class="list-group-item">Target Number: <span id="number-to-guess"> </span></li>
+                <li class="list-group-item">Counter: <span id="counter-number"> </span</li> <li class="list-group-item">
+                        Wins: <span id="wins"> </span></li>
+                <li class="list-group-item">Losses: <span id="losses"></span></li>
+            </ul>
+        </div>
+        <div id="crystals" class="text-center"></div>
+    </div>
 
 
 
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

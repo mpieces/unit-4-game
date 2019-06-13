@@ -46,6 +46,10 @@ for (var i = 0; i < crystalValues.length; i++) {
     $("#crystals").append(imageCrystal);
     }
 }
+// AUDIO SETUP
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "assets/images/crystal-glass.wav");
+
 
 // MAIN PROCESS ===============================================
 
@@ -53,9 +57,15 @@ for (var i = 0; i < crystalValues.length; i++) {
 startGame();
 
 $(".crystal-image").on("click", function () {
+    // add 2 animation classes when crystal clicked on
+    $(this).addClass("animated bounce");
+    // play sound on click
+    audioElement.play();
+    // obtain the crystal value data for the image clicked on
     var crystalValue = ($(this).attr("data-crystalvalue"));
+    // change the data from a string to an integer
     crystalValue = parseInt(crystalValue);
-
+    // update the counter
     counter += crystalValue;
     $("#counter-number").text(counter);
 
@@ -67,7 +77,7 @@ $(".crystal-image").on("click", function () {
         $('#wins').text(wins);
         startGame();
     } else if (counter >= targetNumber) {
-        alert("You lose!");
+        alert("Uh oh...you lost! Try again with new target number!");
         losses++;
         $('#losses').text(losses);
         startGame();
